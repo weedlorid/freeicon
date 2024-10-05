@@ -1,12 +1,16 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    padding: 0 ;
+    padding: 5px ;
+}
+.clear{
+    clear: both;
 }
 [class*="icon-"]{
     display: block;
+    background-repeat: no-repeat;
 }
-[class*="icon-"]{
+[class*="icon-"]::before{
     content: ' ';
     display: block;
     font-size: 16px;
@@ -15,6 +19,18 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+.ic-container{
+    float: left;
+    position: relative;
+    text-align: left;
+}
+.ic-name{
+    position: absolute;
+    top: 0;
+    left:20px;
+    display: block;
+}
+/* các loại cờ */
 .icon-Co-VietNam{
     background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!-- Created with Inkscape (http://www.inkscape.org/) --%3E%3Csvg width='16' height='16' viewBox='0 0 16 16' version='1.1' id='svg1' inkscape:version='1.3.2 (091e20e, 2023-11-25, custom)' sodipodi:docname='Co_VietNam.svg' xmlns:inkscape='http://www.inkscape.org/namespaces/inkscape' xmlns:sodipodi='http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd' xmlns='http://www.w3.org/2000/svg' xmlns:svg='http://www.w3.org/2000/svg'%3E%3Csodipodi:namedview id='namedview1' pagecolor='%23ffffff' bordercolor='%23999999' borderopacity='1' inkscape:showpageshadow='2' inkscape:pageopacity='0' inkscape:pagecheckerboard='0' inkscape:deskcolor='%23d1d1d1' inkscape:document-units='px' inkscape:zoom='45.254834' inkscape:cx='8.0543882' inkscape:cy='7.8555144' inkscape:window-width='1920' inkscape:window-height='991' inkscape:window-x='-9' inkscape:window-y='-9' inkscape:window-maximized='1' inkscape:current-layer='layer1' /%3E%3Cdefs id='defs1' /%3E%3Cg inkscape:label='Layer 1' inkscape:groupmode='layer' id='layer1'%3E%3Cg id='g13'%3E%3Crect style='fill:%23ff0000;fill-opacity:1;stroke:%23ffff00;stroke-width:0;stroke-linejoin:bevel;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.99' id='rect13' width='16.042484' height='15.976193' x='0.022097087' y='0' /%3E%3Cpath sodipodi:type='star' style='fill:%23ffff00;fill-opacity:1;stroke:%23ffff00;stroke-width:0;stroke-linejoin:bevel;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.99' id='path13' inkscape:flatsided='false' sodipodi:sides='5' sodipodi:cx='3.9332814' sodipodi:cy='4.2205434' sodipodi:r1='5.2480001' sodipodi:r2='1.9942399' sodipodi:arg1='1.0471976' sodipodi:arg2='1.6755161' inkscape:rounded='0' inkscape:randomized='0' d='M 6.5572813,8.765445 3.7248266,6.2038587 0.42168371,8.1205674 1.9826204,4.6351691 -0.86100517,2.0859892 2.9361615,2.4934809 4.4818471,-0.99870764 5.2676884,2.7385343 9.0666002,3.1294231 5.7551102,5.0316739 Z' inkscape:transform-center-x='0.0086907448' inkscape:transform-center-y='-0.52466391' transform='matrix(0.99572618,-0.11190538,0.1100438,1.0467549,3.6277752,4.5469449)' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
 }
@@ -39,6 +55,7 @@
 .icon-Co-Ao{
     background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!-- Created with Inkscape (http://www.inkscape.org/) --%3E%3Csvg width='16' height='16' viewBox='0 0 16 16' version='1.1' id='svg1' inkscape:version='1.3.2 (091e20e, 2023-11-25, custom)' sodipodi:docname='CO_Ao.svg' xmlns:inkscape='http://www.inkscape.org/namespaces/inkscape' xmlns:sodipodi='http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd' xmlns='http://www.w3.org/2000/svg' xmlns:svg='http://www.w3.org/2000/svg'%3E%3Csodipodi:namedview id='namedview1' pagecolor='%23ffffff' bordercolor='%23999999' borderopacity='1' inkscape:showpageshadow='2' inkscape:pageopacity='0' inkscape:pagecheckerboard='0' inkscape:deskcolor='%23d1d1d1' inkscape:document-units='px' inkscape:zoom='48.5625' inkscape:cx='8' inkscape:cy='8' inkscape:window-width='1920' inkscape:window-height='991' inkscape:window-x='-9' inkscape:window-y='-9' inkscape:window-maximized='1' inkscape:current-layer='layer1' /%3E%3Cdefs id='defs1' /%3E%3Cg inkscape:label='Layer 1' inkscape:groupmode='layer' id='layer1'%3E%3Crect style='fill:%23ff0000;stroke:%231a1a1a;stroke-width:0;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:0.99' id='rect3' width='16.041183' height='5' x='-0.020592021' y='0.020592021' inkscape:transform-center-x='0.24774058' inkscape:transform-center-y='-0.020592021' /%3E%3Crect style='fill:%23ff0000;stroke:%231a1a1a;stroke-width:0;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:0.99' id='rect3-5' width='16.041183' height='5' x='0.011583013' y='11.030888' inkscape:transform-center-x='0.24774058' inkscape:transform-center-y='-0.020592021' /%3E%3C/g%3E%3C/svg%3E%0A");
 }
+/* các loại mũi tên và hướng */
 .icon-angle-down{
     background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!-- Created with Inkscape (http://www.inkscape.org/) --%3E%3Csvg width='16' height='16' viewBox='0 0 16 16' version='1.1' id='svg1' inkscape:version='1.3.2 (091e20e, 2023-11-25, custom)' sodipodi:docname='angle-down.svg' xmlns:inkscape='http://www.inkscape.org/namespaces/inkscape' xmlns:sodipodi='http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd' xmlns='http://www.w3.org/2000/svg' xmlns:svg='http://www.w3.org/2000/svg'%3E%3Csodipodi:namedview id='namedview1' pagecolor='%23ffffff' bordercolor='%23999999' borderopacity='1' inkscape:showpageshadow='2' inkscape:pageopacity='0' inkscape:pagecheckerboard='0' inkscape:deskcolor='%23d1d1d1' inkscape:document-units='px' showguides='true' inkscape:zoom='48.5625' inkscape:cx='8' inkscape:cy='8' inkscape:window-width='1920' inkscape:window-height='991' inkscape:window-x='-9' inkscape:window-y='-9' inkscape:window-maximized='1' inkscape:current-layer='layer1' /%3E%3Cdefs id='defs1' /%3E%3Cg inkscape:label='Layer 1' inkscape:groupmode='layer' id='layer1'%3E%3Cg id='g1' transform='matrix(1.0301905,0,0,-0.99870191,0.28475858,12.045861)'%3E%3Cpath style='fill:%23ffcc00;stroke:%231a1a1a;stroke-linejoin:bevel;stroke-opacity:0.99' d='M 7.8043758,0.14414414 0.07207207,7.8764479' id='path1' /%3E%3Cpath style='fill:%23ffcc00;stroke:%231a1a1a;stroke-linejoin:bevel;stroke-opacity:0.99' d='M 14.906964,7.9468609 7.1746602,0.21455726' id='path1-6' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
 }
