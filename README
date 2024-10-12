@@ -3,3 +3,5 @@ Hướng dẫn:
   - Link file icon-style.css vào dự án web của bạn
   - truy cập web: <https://weedlorid.github.io/freeicon/> để tìm kiếm tên class icon bạn muốn dùng
   - sử dụng icon theo cách sau: <span class="<tên class của icon>"></span> 
+  - vì tên class dùng để chèn background vào thẻ span nên để thay đổi kích thước của icon, ta phải dùng thuộc tính background-size, đồng thời đảm bảo thuộc tính
+  width và height của thẻ đủ để thể hiện được background
